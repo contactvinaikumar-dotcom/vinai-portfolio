@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VinaiKumar | Graphic Designer &amp; 3D Artist</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;family=Sora:wght@700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scale-102:hover { transform: scale(1.02); }
+        .transition-soft { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(233, 223, 212, 0.5); }
+        span#experience{
+            font-size: 28px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#4c463f",
+                        "on-background": "#1f1b14",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#f7ece1",
+                        "inverse-surface": "#353028",
+                        "secondary-container": "#e4e2e1",
+                        "tertiary": "#645d56",
+                        "on-primary-container": "#49310f",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#4e453b",
+                        "tertiary-container": "#a69d94",
+                        "on-tertiary-fixed": "#201b15",
+                        "primary": "#775934",
+                        "inverse-on-surface": "#f9efe4",
+                        "on-tertiary-container": "#3a352e",
+                        "surface-container-high": "#f1e7db",
+                        "on-surface": "#1f1b14",
+                        "primary-container": "#bc986e",
+                        "surface-tint": "#775934",
+                        "surface-dim": "#e2d8ce",
+                        "on-primary-fixed": "#2a1700",
+                        "surface-variant": "#ebe1d6",
+                        "secondary": "#5f5e5e",
+                        "inverse-primary": "#e7c093",
+                        "outline-variant": "#d2c4b7",
+                        "background": "#fff8f3",
+                        "tertiary-fixed": "#ebe1d7",
+                        "outline": "#80756a",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#e4e2e1",
+                        "primary-fixed": "#ffddb7",
+                        "surface-container-low": "#fcf2e7",
+                        "on-secondary-container": "#656464",
+                        "surface": "#fff8f3",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "surface-container-highest": "#ebe1d6",
+                        "tertiary-fixed-dim": "#cfc5bc",
+                        "on-primary-fixed-variant": "#5c421f",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fff8f3",
+                        "primary-fixed-dim": "#e7c093",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "xs": "4px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "xxl": "120px",
+                        "sm": "12px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "stats-num": ["Sora"],
+                        "h2": ["Poppins"],
+                        "hero-name-mobile": ["Sora"],
+                        "professional-title": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "h3": ["Poppins"],
+                        "hero-name": ["Sora"],
+                        "body-md": ["Inter"],
+                        "h1": ["Poppins"],
+                        "button": ["Poppins"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["14px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "stats-num": ["40px", {"lineHeight": "1", "fontWeight": "700"}],
+                        "h2": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "hero-name-mobile": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "professional-title": ["18px", {"lineHeight": "1.5", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "hero-name": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "button": ["16px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background font-body-md text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md">
+<nav class="max-w-container-max mx-auto px-gutter flex items-center h-20 justify-start">
+<div class="flex items-center gap-xs">
+</div><div class="hidden md:flex gap-md ml-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-semibold border-b-2 border-primary pb-1" href="#work">Work</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<a href="https://wa.me/919677521009"
+   target="_blank"
+   class="bg-primary-container text-on-primary py-2 px-md rounded-full font-button text-button hover:scale-102 active:scale-95 transition-soft ml-auto">
+    Let's Connect
+</a>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="min-h-[90vh] flex flex-col md:flex-row items-center px-gutter max-w-container-max mx-auto py-xl md:py-xxl gap-lg transition-all duration-700 opacity-100">
+<div class="w-full md:w-1/2 order-2 md:order-1 space-y-md">
+<h1 class="font-hero-name-mobile uppercase tracking-tighter text-on-background text-[34px] sm:text-[40px] md:!text-[40px] lg:!text-[62px] xl:!text-[76px] leading-[1.05] whitespace-nowrap">
+                        VINAIKUMAR
+                </h1>
+<p class="font-professional-title text-primary uppercase whitespace-nowrap text-[8px] sm:text-[11px] md:text-[13px] lg:text-[16px] leading-tight tracking-[0.04em]">
+                    Graphic Designer | Video Editor | 3D Artist | AI Creator
+                </p>
+<div class="flex flex-wrap gap-base pt-base">
+<a href="#work"
+   class="bg-primary text-on-primary py-4 px-xl rounded-full font-button text-button hover:scale-102 active:scale-95 transition-soft">
+    View Portfolio
+</a>
+<a href="https://drive.google.com/drive/folders/1dsAmNM-izgJoeLAkzcTUiaxp8q7Zf4S3?usp=sharing"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="border border-primary text-primary py-4 px-xl rounded-full font-button text-button hover:bg-primary/5 hover:scale-102 active:scale-95 transition-soft">
+    Download Resume
+</a>
+</div>
+<div class="pt-xl space-y-base border-t border-outline-variant">
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+<span class="text-body-md font-body-md">+91 96775 21009</span>
+</div>
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+<span class="text-body-md font-body-md">contact.vinaikumar@gmail.com</span>
+</div>
+<div class="flex items-center gap-base text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<span class="text-body-md font-body-md">Bengaluru, India</span>
+</div>
+</div>
+<div class="flex gap-md pt-base">
+<a href="https://www.linkedin.com/in/vinai-kumar-2384b3310/" target="_blank" class="text-primary hover:scale-110 transition-soft">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.66H9.36V8.99h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.56V8.99H3.56v11.46z"/>
+    </svg>
+</a>
+<a href="https://www.instagram.com/vinai.visuallab?igsi=MWpnNnpjMHF6em1heQ%3D%3D" target="_blank" class="text-primary hover:scale-110 transition-soft">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8zm8.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+    </svg>
+</a>
+<a href="https://www.behance.net/vinaikumar1" target="_blank" class="text-primary hover:scale-110 transition-soft">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M7.2 5c2.4 0 4.2 1.1 4.2 3.2 0 1.2-.6 2.1-1.7 2.6 1.6.4 2.5 1.5 2.5 3.2 0 2.4-2 4-5 4H2V5h5.2zm-.4 5c1 0 1.7-.5 1.7-1.3 0-.8-.7-1.2-1.7-1.2H5v2.5h1.8zm.3 5.5c1.1 0 2-.6 2-1.6s-.8-1.6-2-1.6H5v3.2h2.1zM14 8h6V6.5h-6V8zm3 1c2.9 0 5 2.1 5 5.2v.6h-7c.2 1.5 1.1 2.3 2.5 2.3 1 0 1.7-.4 2.1-1.2h2.2c-.6 1.8-2.1 2.8-4.4 2.8-2.9 0-4.8-1.9-4.8-4.9S14.1 9 17 9zm2.7 4c-.2-1.2-1-2-2.5-2s-2.1.7-2.3 2h4.8z"/>
+    </svg>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 order-1 md:order-2 h-[400px] md:h-[600px] relative"><!-- STITCH_SHADER_START:ANIMATION_11 class="absolute inset-0 w-full h-full" -->
+<div class="absolute inset-0 w-full h-full" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_11" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_11');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+varying vec2 v_texCoord;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+
+// Helper to rotate a 3D point
+mat3 rotateY(float angle) {
+    return mat3(cos(angle), 0.0, sin(angle), 0.0, 1.0, 0.0, -sin(angle), 0.0, cos(angle));
+}
+
+mat3 rotateX(float angle) {
+    return mat3(1.0, 0.0, 0.0, 0.0, cos(angle), -sin(angle), 0.0, sin(angle), cos(angle));
+}
+
+mat3 rotateZ(float angle) {
+    return mat3(cos(angle), -sin(angle), 0.0, sin(angle), cos(angle), 0.0, 0.0, 0.0, 1.0);
+}
+
+// Distance function for a rounded box
+float sdRoundedBox(vec3 p, vec3 b, float r) {
+    vec3 q = abs(p) - b;
+    return length(max(q, 0.0)) + min(max(q.x, max(q.y, q.z)), 0.0) - r;
+}
+
+// Map the Rubik's Cube (3x3 grid of small cubes)
+float map(vec3 p) {
+    // Global rotation with mouse influence
+    vec2 mouse = u_mouse / u_resolution - 0.5;
+    p = rotateY(u_time * 0.3 + mouse.x * 2.5) * rotateX(u_time * 0.15 + mouse.y * 2.5) * p;
+    
+    float d = 1e10;
+    float s = 0.32; // size of small cube
+    float g = 0.06; // gap
+    
+    for(int x = -1; x <= 1; x++) {
+        for(int y = -1; y <= 1; y++) {
+            for(int z = -1; z <= 1; z++) {
+                vec3 offset = vec3(float(x), float(y), float(z)) * (s * 2.0 + g);
+                
+                // Animate individual layers
+                vec3 q = p;
+                float angle = sin(u_time * 2.0) * 1.57; // 90 degree turns
+                
+                // Procedural layer rotation sequence
+                float tCycle = mod(u_time, 9.0);
+                if (tCycle < 3.0) {
+                   if (x == 1) q = rotateX(angle) * q;
+                } else if (tCycle < 6.0) {
+                   if (y == -1) q = rotateY(angle) * q;
+                } else {
+                   if (z == 0) q = rotateZ(angle) * q;
+                }
+                
+                float box = sdRoundedBox(q - offset, vec3(s), 0.08);
+                d = min(d, box);
+            }
+        }
+    }
+    return d;
+}
+
+void main() {
+    vec2 uv = (gl_FragCoord.xy * 2.0 - u_resolution.xy) / min(u_resolution.y, u_resolution.x);
+    
+    vec3 ro = vec3(0.0, 0.0, 5.0); // Ray origin
+    vec3 rd = normalize(vec3(uv, -1.8)); // Ray direction
+    
+    float t = 0.0;
+    for(int i = 0; i < 80; i++) {
+        vec3 p = ro + rd * t;
+        float d = map(p);
+        if(d < 0.001 || t > 10.0) break;
+        t += d;
+    }
+    
+    vec3 background = vec3(1.0, 0.97, 0.95); // Light cream from design system
+    vec3 color = background;
+    
+    if(t < 10.0) {
+        vec3 p = ro + rd * t;
+        vec3 normal = normalize(vec3(
+            map(p + vec3(0.001, 0, 0)) - map(p - vec3(0.001, 0, 0)),
+            map(p + vec3(0, 0.001, 0)) - map(p - vec3(0, 0.001, 0)),
+            map(p + vec3(0, 0, 0.001)) - map(p - vec3(0, 0, 0.001))
+        ));
+        
+        vec3 lightPos = vec3(5.0, 5.0, 5.0);
+        float diff = max(dot(normal, normalize(lightPos)), 0.0);
+        
+        // Define Rubik's palette based on normal direction (Portfolio theme colors)
+        vec3 col = vec3(0.15); // Black gaps
+        // Using theme colors: #BC986E (Primary), #FFFFFF (Surface), etc.
+        if (abs(normal.x) > 0.9) col = normal.x > 0.0 ? vec3(0.74, 0.60, 0.43) : vec3(0.85, 0.75, 0.65); // Primary Brown variants
+        if (abs(normal.y) > 0.9) col = normal.y > 0.0 ? vec3(1.0, 1.0, 1.0) : vec3(0.9, 0.85, 0.8); // White/Cream
+        if (abs(normal.z) > 0.9) col = normal.z > 0.0 ? vec3(0.5, 0.4, 0.3) : vec3(0.3, 0.2, 0.1); // Darker Brown
+        
+        color = col * (diff + 0.4);
+        
+        // Add subtle rim light
+        float rim = 1.0 - max(dot(normal, -rd), 0.0);
+        color += pow(rim, 3.0) * 0.2;
+    }
+    
+    gl_FragColor = vec4(color, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_11 -->
+</div>
+</section>
+<!-- About Me Section -->
+<section class="bg-surface-container-low py-xxl px-gutter transition-all duration-700 opacity-100" id="about">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-xxl items-center">
+<div class="space-y-md">
+<div class="space-y-xs">
+<p class="font-professional-title text-label-sm text-primary uppercase tracking-[0.2em]">About Me</p>
+<h2 class="font-h2 text-h2 text-on-background">Designer by Passion.</h2>
+</div>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                        Innovative 2D/3D Artist with experience in graphic design, video editing, digital media, and social 
+media handling, skilled in creating impactful visual content, AI-generated media, and engaging 
+brand campaigns through creative design and storytelling.
+                    </p>
+<div class="grid grid-cols-2 gap-md pt-md">
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-sm border border-outline-variant/30 flex flex-col items-center">
+<span id="experience">1 Year 5 Months</span>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const joiningDate = new Date(2025, 2, 17);
+    const today = new Date();
+
+    let years = today.getFullYear() - joiningDate.getFullYear();
+    let months = today.getMonth() - joiningDate.getMonth();
+
+    if (today.getDate() < joiningDate.getDate()) {
+        months--;
+    }
+
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    const yearText = years === 1 ? "Year" : "Years";
+    const monthText = months === 1 ? "Month" : "Months";
+
+    document.getElementById("experience").textContent =
+        `${years} ${yearText} ${months} ${monthText}`;
+});
+</script>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-sm border border-outline-variant/30 flex flex-col items-center">
+<span class="font-stats-num text-stats-num text-on-background">03</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Industry Awards</span>
+</div>
+</div>
+<ul class="flex gap-base pt-md flex-nowrap overflow-x-auto">
+<li class="bg-surface-container-high px-md py-2 rounded-full text-label-sm font-label-sm text-primary border border-outline-variant">Brand Identity</li>
+<li class="bg-surface-container-high px-md py-2 rounded-full text-label-sm font-label-sm text-primary border border-outline-variant">Marketing</li>
+<li class="bg-surface-container-high px-md py-2 rounded-full text-label-sm font-label-sm text-primary border border-outline-variant">Social Media</li>
+</ul>
+</div>
+<div class="relative group">
+<img alt="Workspace image" class="rounded-xl shadow-2xl object-cover w-full h-[500px] grayscale group-hover:grayscale-0 transition-soft" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyQC34f0h5h-80FBnURPhkifpIIY3YqnOOagPSoW8CB7VdDCDSComugHxO7brH3EsiRrGoXVk6ivAhwzAZMcGO43PaZbl8Su8TgQC0eGqX43h6FXWKKq3uaiCaBWZroSnVI9povyG30MV-LRVjUEV8Dr1zBqZCR4TmLPE9kUwqMm5EjZDHPW2RdSwmA0Dhqb-iw9CWgDOj1y_OgiFl_MRbOtyH_9VGg0qqvVmzYO8pdv8tgema3bK4u6yO2kyae6UcfOdlOLdGkw"/>
+<div class="absolute inset-0 border-2 border-primary-container m-4 rounded-xl pointer-events-none group-hover:m-2 transition-soft"></div>
+</div>
+</div>
+</section>
+<!-- What I Do Section -->
+<section class="py-xxl px-gutter max-w-container-max mx-auto transition-all duration-700 opacity-100" id="services">
+<div class="text-center mb-xl">
+<h2 class="font-h1 text-h1 text-on-background mb-base">What I Do</h2>
+<div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-low p-md rounded-xl hover:shadow-xl transition-soft border border-outline-variant group">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-soft">
+<span class="material-symbols-outlined text-on-primary" data-icon="brush">brush</span>
+</div>
+<h3 class="font-h3 text-h3 mb-base">Graphic Design</h3>
+<p class="text-on-surface-variant">Transforming ideas into powerful visuals through creative design, layout, and brand storytelling.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low p-md rounded-xl hover:shadow-xl transition-soft border border-outline-variant group">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-soft">
+<span class="material-symbols-outlined text-on-primary" data-icon="movie_edit">movie_edit</span>
+</div>
+<h3 class="font-h3 text-h3 mb-base">Video Editing</h3>
+<p class="text-on-surface-variant">Bringing stories to life through precise editing, dynamic motion, and cinematic visual techniques.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low p-md rounded-xl hover:shadow-xl transition-soft border border-outline-variant group">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-soft">
+<span class="material-symbols-outlined text-on-primary" data-icon="view_in_ar">view_in_ar</span>
+</div>
+<h3 class="font-h3 text-h3 mb-base">3D Modeling</h3>
+<p class="text-on-surface-variant">Building immersive 3D experiences through detailed modeling, realistic environments, and game-ready assets.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low p-md rounded-xl hover:shadow-xl transition-soft border border-outline-variant group">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-soft">
+<span class="material-symbols-outlined text-on-primary" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h3 class="font-h3 text-h3 mb-base">AI Media</h3>
+<p class="text-on-surface-variant">Transforming creative ideas into compelling visuals, videos, and digital experiences using generative AI.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-low p-md rounded-xl hover:shadow-xl transition-soft border border-outline-variant group">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-soft">
+<span class="material-symbols-outlined text-on-primary" data-icon="sports_esports">sports_esports</span>
+</div>
+<h3 class="font-h3 text-h3 mb-base">Game Design</h3>
+<p class="text-on-surface-variant">Building immersive game worlds through thoughtful mechanics, level design, and compelling visual storytelling.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-low p-md rounded-xl hover:shadow-xl transition-soft border border-outline-variant group">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-soft">
+<span class="material-symbols-outlined text-on-primary" data-icon="animation">animation</span>
+</div>
+<h3 class="font-h3 text-h3 mb-base">Animation &amp; VFX</h3>
+<p class="text-on-surface-variant">Crafting dynamic visual experiences through keyframe animation, motion effects, and creative storytelling.</p>
+</div>
+</div>
+</section>
+<!-- Watch My Work Section -->
+<section class="py-xxl px-gutter bg-background transition-all duration-700 opacity-100" id="work">
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-xl">
+<h2 class="font-h1 text-h1 text-on-background">Watch My Work</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Portfolio Card 1 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl aspect-video mb-md border-2 border-primary-container">
+    <img src="https://drive.google.com/thumbnail?id=16uiVtd_jKpw_oVwXU3ZKtVglwaj-XRzE&sz=w1600"
+     alt="Graphic Design"
+     class="w-full h-full object-cover group-hover:scale-110 transition-soft">
+     <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-soft flex items-center justify-center">
+</div>
+</div>
+<h3 class="font-h3 text-h3">Graphic Design</h3>
+<a href="https://drive.google.com/drive/folders/1jiYsek9jdm9MRArT-_639HBUk1WtjPNY?usp=sharing"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="bg-primary-container text-on-primary w-full py-3 rounded-xl font-button flex items-center justify-center gap-xs hover:opacity-90 transition-soft">
+    <span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+    Watch Now
+</a>
+</div>
+<!-- Portfolio Card 2 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl aspect-video mb-md border-2 border-primary-container">
+<img src="https://drive.google.com/thumbnail?id=1u7iQban7Xybdzr85ZCW53pSQALeywOmE&sz=w1600"
+     alt="Video Editing"
+     class="w-full h-full object-cover group-hover:scale-110 transition-soft">
+     <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-soft flex items-center justify-center">
+</div>
+</div>
+<h3 class="font-h3 text-h3">Video Editing</h3>
+<a href="https://drive.google.com/drive/folders/1EOrO5y3igEdpBGoQfh863vt63F3-4ok5?usp=sharing"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="bg-primary-container text-on-primary w-full py-3 rounded-xl font-button flex items-center justify-center gap-xs hover:opacity-90 transition-soft">
+    <span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+    Watch Now
+</a>
+</div>
+<!-- Portfolio Card 3 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl aspect-video mb-md border-2 border-primary-container">
+<img src="https://drive.google.com/thumbnail?id=1gYZA07rX-uZ3yV_j3rMGfAYg_6QNe8Ry&sz=w1600"
+     alt="3D Works"
+     class="w-full h-full object-cover group-hover:scale-110 transition-soft">
+     <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-soft flex items-center justify-center">
+</div>
+</div>
+<h3 class="font-h3 text-h3">3D Works</h3>
+<a href="https://drive.google.com/drive/folders/1P6rG9W7hs2GlziT82LMqQ57s1prjUH5v?usp=sharing"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="bg-primary-container text-on-primary w-full py-3 rounded-xl font-button flex items-center justify-center gap-xs hover:opacity-90 transition-soft">
+    <span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+    Watch Now
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Software Skills Section -->
+<section class="py-xl bg-surface-container-low transition-all duration-700 opacity-100">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-h2 text-h2 mb-xl">Mastered Tools</h2>
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-x-3 gap-y-7 w-full">
+<div class="flex flex-col items-center gap-base group flex-shrink-0">
+<div class="w-16 h-16 glass-card rounded-xl flex items-center justify-center group-hover:-translate-y-2 transition-soft">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="photo_camera">photo_camera</span>
+</div>
+<span class="text-label-sm font-label-sm">Photoshop</span>
+</div>
+<div class="flex flex-col items-center gap-base group flex-shrink-0">
+<div class="w-16 h-16 glass-card rounded-xl flex items-center justify-center group-hover:-translate-y-2 transition-soft">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="draw">draw</span>
+</div>
+<span class="text-label-sm font-label-sm">Illustrator</span>
+</div>
+<div class="flex flex-col items-center gap-base group flex-shrink-0">
+<div class="w-16 h-16 glass-card rounded-xl flex items-center justify-center group-hover:-translate-y-2 transition-soft">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="movie">movie</span>
+</div>
+<span class="text-label-sm font-label-sm">Premiere</span>
+</div>
+<div class="flex flex-col items-center gap-base group flex-shrink-0">
+<div class="w-16 h-16 glass-card rounded-xl flex items-center justify-center group-hover:-translate-y-2 transition-soft">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="auto_videocam">auto_videocam</span>
+</div>
+<span class="text-label-sm font-label-sm">After Effects</span>
+</div>
+<div class="flex flex-col items-center gap-base group flex-shrink-0">
+<div class="w-16 h-16 glass-card rounded-xl flex items-center justify-center group-hover:-translate-y-2 transition-soft">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="3d_rotation">3d_rotation</span>
+</div>
+<span class="text-label-sm font-label-sm">Maya</span>
+</div>
+<div class="flex flex-col items-center gap-base group flex-shrink-0">
+<div class="w-16 h-16 glass-card rounded-xl flex items-center justify-center group-hover:-translate-y-2 transition-soft">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="layers">layers</span>
+</div>
+<span class="text-label-sm font-label-sm">Substance</span>
+</div>
+<div class="flex flex-col items-center gap-base group flex-shrink-0">
+<div class="w-16 h-16 glass-card rounded-xl flex items-center justify-center group-hover:-translate-y-2 transition-soft">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="stadium">stadium</span>
+</div>
+<span class="text-label-sm font-label-sm">Unreal Engine</span>
+</div>
+<div class="flex flex-col items-center gap-base group flex-shrink-0">
+<div class="w-16 h-16 glass-card rounded-xl flex items-center justify-center group-hover:-translate-y-2 transition-soft">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="architecture">architecture</span>
+</div>
+<span class="text-label-sm font-label-sm">ZBrush</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Awards & Recognition -->
+<section class="py-xxl px-gutter bg-background transition-all duration-700 opacity-100">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-h1 text-h1">Awards &amp; Recognition</h2>
+<p class="text-on-surface-variant">Validated excellence in creative industries.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="bg-surface-container-low p-lg rounded-xl border-l-4 border-primary">
+<div class="flex justify-between items-start mb-md">
+<span class="material-symbols-outlined text-primary" data-icon="workspace_premium">workspace_premium</span>
+<span class="text-label-sm font-label-sm opacity-60">2026</span>
+</div>
+<h3 class="font-h3 text-h3 mb-xs">Best Creative Deliveries</h3>
+<p class="text-on-surface-variant">Abhee Ventures Pvt. Ltd.</p>
+</div>
+<div class="bg-surface-container-low p-lg rounded-xl border-l-4 border-primary">
+<div class="flex justify-between items-start mb-md">
+<span class="material-symbols-outlined text-primary" data-icon="workspace_premium">workspace_premium</span>
+<span class="text-label-sm font-label-sm opacity-60">2025</span>
+</div>
+<h3 class="font-h3 text-h3 mb-xs">Best Performance</h3>
+<p class="text-on-surface-variant">Abhee Ventures Pvt. Ltd.</p>
+</div>
+<div class="bg-surface-container-low p-lg rounded-xl border-l-4 border-primary">
+<div class="flex justify-between items-start mb-md">
+<span class="material-symbols-outlined text-primary" data-icon="star">star</span>
+<span class="text-label-sm font-label-sm opacity-60">2024</span>
+</div>
+<h3 class="font-h3 text-h3 mb-xs">Best 3D Environment Gaming Design</h3>
+<p class="text-on-surface-variant">Creative Minds.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xxl px-gutter max-w-container-max mx-auto" id="contact">
+
+    <div class="bg-primary-container/10 rounded-3xl p-lg md:p-xxl grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+
+        <!-- Left Side -->
+        <div class="space-y-md">
+
+            <h2 class="font-h1 text-h1 text-on-background">
+                Let's Create Something Amazing Together.
+            </h2>
+
+            <div class="space-y-4">
+
+    <!-- Phone -->
+    <div class="flex items-center gap-6">
+        <div class="flex items-center justify-center rounded-full bg-white shadow-sm shrink-0"
+             style="width:48px; min-width:48px; height:48px;">
+            <span class="material-symbols-outlined text-primary">call</span>
+        </div>
+
+        <div class="min-w-0 text-left">
+            <p class="text-label-sm text-on-surface-variant">Call me at</p>
+            <a href="tel:+919677521009" class="block font-semibold">
+                +91 96775 21009
+            </a>
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div class="flex items-center gap-6">
+        <div class="flex items-center justify-center rounded-full bg-white shadow-sm shrink-0"
+             style="width:48px; min-width:48px; height:48px;">
+            <span class="material-symbols-outlined text-primary">email</span>
+        </div>
+
+        <div class="min-w-0 text-left">
+            <p class="text-label-sm text-on-surface-variant">Email me at</p>
+            <a href="mailto:contact.vinaikumar@gmail.com"
+               class="block font-semibold whitespace-nowrap text-[11px] sm:text-sm tracking-[-0.02em]">
+                contact.vinaikumar@gmail.com
+            </a>
+        </div>
+    </div>
+
+    <!-- Availability -->
+    <div class="flex items-center gap-6">
+        <div class="flex items-center justify-center rounded-full bg-white shadow-sm shrink-0"
+             style="width:48px; min-width:48px; height:48px;">
+            <span class="material-symbols-outlined text-primary">rocket_launch</span>
+        </div>
+
+        <div class="min-w-0 text-left">
+            <p class="text-label-sm text-on-surface-variant">Available for</p>
+            <p class="font-semibold">Full-time</p>
+        </div>
+    </div>
+
+</div>
+        </div>
+
+        <!-- Right Side Character -->
+        <div class="flex justify-center items-end h-full">
+            <img src="https://drive.google.com/thumbnail?id=19xBdUYRy-Ymk2lbRQJ1Vc-bs1OSEs43O&sz=w1200"
+                 alt="3D designer working on a laptop"
+                 class="w-full max-w-[430px] max-h-[500px] object-contain">
+        </div>
+
+    </div>
+
+</section>
+</div>
+</a>
+</div>
+</ul>
+</div>
+</ul>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container text-on-primary-container py-xl">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div class="flex flex-col gap-base">
+<span class="font-h3 text-h3 font-bold text-on-primary-container tracking-tight">VinaiKumar</span>
+</div>
+<div class="flex flex-col md:items-end gap-md">
+<div class="flex gap-md">
+</div>
+<p class="font-body-md text-body-md opacity-70">© 2026 VinaiKumar. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Floating Action Button for Contact -->
+<button class="md:hidden fixed bottom-6 right-6 w-14 h-14 bg-primary text-on-primary rounded-full shadow-2xl flex items-center justify-center z-50 active:scale-95 transition-soft">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+</button>
+<script>
+        // Simple intersection observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
